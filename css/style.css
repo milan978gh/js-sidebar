@@ -160,7 +160,8 @@ Sidebar
   color: var(--clr-primary-5);
   transition: var(--transition);
   cursor: pointer;
-  animation: bounce 2s ease-in-out infinite;
+  outline: none;
+  /* animation: bounce 2s ease-in-out infinite; */
 }
 .sidebar-toggle:hover {
   color: var(--clr-primary-7);
@@ -190,11 +191,12 @@ Sidebar
   color: var(--clr-primary-5);
   transition: var(--transition);
   cursor: pointer;
+  outline: none;
   color: var(--clr-red-dark);
 }
 .close-btn:hover {
   color: var(--clr-red-light);
-  transform: rotate(360deg);
+  /* transform: rotate(360deg); */
 }
 .logo {
   justify-self: center;
@@ -214,20 +216,6 @@ Sidebar
   color: var(--clr-primary-5);
   padding-left: 1.75rem;
 }
-.social-icons {
-  justify-self: center;
-  display: flex;
-  padding-bottom: 2rem;
-}
-.social-icons a {
-  font-size: 1.5rem;
-  margin: 0 0.5rem;
-  color: var(--clr-primary-5);
-  transition: var(--transition);
-}
-.social-icons a:hover {
-  color: var(--clr-primary-1);
-}
 
 .sidebar {
   position: fixed;
@@ -243,7 +231,7 @@ Sidebar
   transition: var(--transition);
   transform: translate(-100%);
 }
-.show-sidebar {
+.show-sidebar { /* this makes JS toggle work */
   transform: translate(0);
 }
 @media screen and (min-width: 676px) {
